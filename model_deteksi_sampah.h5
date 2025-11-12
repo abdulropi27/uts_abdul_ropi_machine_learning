@@ -1,0 +1,12 @@
+
+---
+
+## ⚙️ Implementasi ML.NET
+Model TensorFlow diintegrasikan ke aplikasi C# menggunakan **ML.NET** dengan pipeline sederhana:
+
+```csharp
+var pipeline = context.Transforms.LoadImages("input", "", nameof(ImageData.ImagePath))
+    .Append(context.Transforms.ResizeImages("input", 224, 224))
+    .Append(context.Transforms.ExtractPixels("input"))
+    .Append(context.Model.LoadTensorFlowModel("model/model_deteksi_sampah.h5")
+        .ScoreTensorName("dense"));
