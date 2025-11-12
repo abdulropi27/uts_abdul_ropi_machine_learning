@@ -1,11 +1,11 @@
-# 🧠 Deteksi Jenis Sampah Menggunakan CNN dan ML.NET
+#  Deteksi Jenis Sampah Menggunakan CNN dan ML.NET
 
 Proyek ini merupakan bagian dari tugas UTS mata kuliah **Machine Learning**, dengan tujuan membangun model **deteksi jenis sampah** menggunakan metode **Convolutional Neural Network (CNN)**.  
 Model ini kemudian diintegrasikan ke dalam **framework ML.NET** untuk digunakan pada aplikasi berbasis .NET.
 
 ---
 
-## 📌 Deskripsi Proyek
+##  Deskripsi Proyek
 Aplikasi ini dibuat untuk membantu proses pengelolaan sampah dengan mengenali jenis sampah (organik, plastik, logam, dll) berdasarkan gambar.  
 Proyek ini terdiri dari dua tahap utama:
 1. **Pelatihan model CNN** menggunakan dataset gambar sampah.
@@ -13,7 +13,7 @@ Proyek ini terdiri dari dua tahap utama:
 
 ---
 
-## 📂 Dataset
+##  Dataset
 Dataset yang digunakan adalah **Waste Classification Dataset** dari Kaggle, berisi beberapa kategori gambar sampah seperti:
 - **Organic**
 - **Plastic**
@@ -29,5 +29,3 @@ Proses pelatihan dilakukan selama **20 epoch**, dengan hasil akurasi akhir:
 
 > 🎯 **Akurasi Model:** 46.88%  
 > 📉 **Loss:** 1.2838
-
-Model disimpan dalam format `.h5` dengan nama:
